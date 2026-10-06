@@ -698,7 +698,7 @@ def plot_annual_trends(annual):
     ax_right.yaxis.set_major_formatter(
         PercentFormatter(
             1.0,
-            decimals=0,
+            decimals=1,
         )
     )
 
