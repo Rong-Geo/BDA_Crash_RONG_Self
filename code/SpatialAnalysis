@@ -1,0 +1,1104 @@
+# %% 1. Imports and configuration
+
+from pathlib import Path
+import re
+
+import geopandas as gpd
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.ticker import PercentFormatter
+import pandas as pd
+import seaborn as sns
+
+
+# Use repository-relative paths so every teammate can reproduce the workflow.
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+INPUT_FILE = PROJECT_ROOT / "data" / "raw" / "sd_county_collision_data_clean.csv"
+BEAT_GEOJSON = PROJECT_ROOT / "data" / "raw" / "pd_beats_datasd.geojson"
+
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+YEARLY_DIR = PROCESSED_DIR / "yearly"
+SPATIAL_DIR = PROCESSED_DIR / "spatial"
+
+FIGURE_DIR = PROJECT_ROOT / "outputs" / "figures"
+TABLE_DIR = PROJECT_ROOT / "outputs" / "tables"
+
+START_YEAR = 2018
+END_YEAR = 2025
+
+# These years are used for the three-panel comparison and ArcGIS maps.
+SELECTED_YEARS = [2018, 2020, 2025]
+
+# A beat needs at least 30 records with known injury status
+# before it is used for injury-severity comparison.
+MIN_KNOWN_INJURY_N = 30
+
+# Keep this False until the team validates a definitive freeway rule.
+# Possible freeway records are still flagged in the output.
+EXCLUDE_POSSIBLE_FREEWAYS = False
+
+
+# Academic low-saturation color palette
+COLORS = {
+    "blue_1": "#DCE8EF",
+    "blue_2": "#A9C2D3",
+    "blue_3": "#7FA6BE",
+    "blue_4": "#5B8DB3",
+    "blue_5": "#294B66",
+    "red_1": "#F1D9D9",
+    "red_2": "#E5B7B8",
+    "red_3": "#D78F92",
+    "red_4": "#C96D72",
+    "red_5": "#B95055",
+    "teal": "#4B9397",
+    "gray": "#AAB4BC",
+    "light_gray": "#E7ECEF",
+    "background": "#FAFBFC",
+    "black": "#263238",
+}
+
+mpl.rcParams.update({
+    "font.family": "Arial",
+    "font.size": 10,
+    "axes.titlesize": 14,
+    "axes.titleweight": "bold",
+    "axes.labelsize": 12,
+    "xtick.labelsize": 10,
+    "ytick.labelsize": 10,
+    "legend.fontsize": 10,
+    "figure.facecolor": "none",
+    "axes.facecolor": "none",
+    "savefig.facecolor": "none",
+    "savefig.edgecolor": "none",
+    "savefig.bbox": "tight",
+})
+
+sns.set_theme(style="whitegrid")
+
+
+mpl.rcParams.update({
+    "figure.facecolor": "none",
+    "axes.facecolor": "none",
+    "savefig.facecolor": "none",
+    "savefig.edgecolor": "none",
+})
+
+
+# %% 2. functions
+
+def make_directories():
+    """Create folders for processed data, tables, spatial layers, and figures."""
+
+    for folder in [
+        PROCESSED_DIR,
+        YEARLY_DIR,
+        SPATIAL_DIR,
+        FIGURE_DIR,
+        TABLE_DIR,
+    ]:
+        folder.mkdir(parents=True, exist_ok=True)
+
+
+def normalize_beat(value):
+    """Convert police-beat identifiers to consistent text values."""
+
+    if pd.isna(value):
+        return ""
+
+    value = str(value).strip()
+
+    if value.endswith(".0"):
+        value = value[:-2]
+
+    return value
+
+def save_figure(fig, filename):
+    """Save figures with transparent backgrounds in PNG and SVG formats."""
+
+    # Ensure every axes object also has a transparent background.
+    for ax in fig.axes:
+        ax.set_facecolor("none")
+
+    fig.patch.set_alpha(0)
+
+    fig.savefig(
+        FIGURE_DIR / f"{filename}.png",
+        dpi=300,
+        transparent=True,
+        facecolor="none",
+        edgecolor="none",
+    )
+
+    fig.savefig(
+        FIGURE_DIR / f"{filename}.svg",
+        transparent=True,
+        facecolor="none",
+        edgecolor="none",
+    )
+
+    plt.close(fig)
+
+
+def classify_global_quantiles(values, prefix):
+    """
+    Create five classes using common quantiles.
+
+    Common quantiles are used across 2016, 2020, and 2025 so the same
+    color has a comparable meaning across the selected years.
+    """
+
+    labels = [
+        "Very low",
+        "Low",
+        "Medium",
+        "High",
+        "Very high",
+    ]
+
+    result = pd.Series(
+        "Not eligible",
+        index=values.index,
+        dtype="object",
+    )
+
+    valid_values = values.dropna()
+
+    if len(valid_values) < 5:
+        return result
+
+    ranks = valid_values.rank(method="first")
+
+    groups = pd.qcut(
+        ranks,
+        q=5,
+        labels=labels,
+    )
+
+    result.loc[groups.index] = groups.astype(str).map(
+        lambda value: f"{prefix}: {value}"
+    )
+
+    return result
+
+
+def mark_possible_freeways(df):
+    """
+    Flag records whose address text suggests a freeway or ramp.
+
+    This is a screening flag, not a final exclusion rule.
+    """
+
+    address_columns = [
+        "address_road_primary",
+        "address_name_intersecting",
+        "address_pd_primary",
+        "address_pd_intersecting",
+    ]
+
+    address_columns = [
+        column for column in address_columns
+        if column in df.columns
+    ]
+
+    address_text = (
+        df[address_columns]
+        .fillna("")
+        .astype(str)
+        .agg(" ".join, axis=1)
+    )
+
+    freeway_pattern = re.compile(
+        r"(freeway|interstate|highway|hwy|on[- ]?ramp|off[- ]?ramp|"
+        r"\bi[- ]?(5|8|15|805|125|163)\b|"
+        r"\bsr[- ]?(52|54|56|78|94|125|163|905)\b)",
+        flags=re.IGNORECASE,
+    )
+
+    df["possible_freeway"] = address_text.str.contains(
+        freeway_pattern,
+        na=False,
+    )
+
+    return df
+
+
+# %% 3. Clean participant-level data
+
+def load_and_clean_participants():
+    """Clean the source dataset and keep the 2018–2025 analysis period."""
+
+    if not INPUT_FILE.exists():
+        raise FileNotFoundError(
+            f"Collision dataset was not found: {INPUT_FILE}"
+        )
+
+    df = pd.read_csv(
+        INPUT_FILE,
+        low_memory=False,
+    )
+
+    # Strip extra spaces from all text fields.
+    for column in df.select_dtypes(include="object").columns:
+        df[column] = (
+            df[column]
+            .fillna("")
+            .astype(str)
+            .str.strip()
+        )
+
+    # Correct the known source typo if it remains.
+    df["person_injury_lvl"] = df[
+        "person_injury_lvl"
+    ].replace({
+        "VISABLE": "VISIBLE"
+    })
+
+    # Remove completely blank rows and exact duplicate rows.
+    df = df.loc[
+        df.astype(str).ne("").any(axis=1)
+    ].copy()
+
+    df = df.drop_duplicates().copy()
+
+    # Parse date and create temporal fields.
+    df["date_time"] = pd.to_datetime(
+        df["date_time"],
+        errors="coerce",
+    )
+
+    df["year"] = df["date_time"].dt.year
+    df["month"] = df["date_time"].dt.month
+    df["day_of_week"] = df["date_time"].dt.day_name()
+    df["hour"] = df["date_time"].dt.hour
+
+    # Keep 2018–2025 only.
+    df = df.loc[
+        df["year"].between(
+            START_YEAR,
+            END_YEAR,
+        )
+    ].copy()
+
+    df["police_beat"] = df[
+        "police_beat"
+    ].map(normalize_beat)
+
+    df = mark_possible_freeways(df)
+
+    if EXCLUDE_POSSIBLE_FREEWAYS:
+        df = df.loc[
+            ~df["possible_freeway"]
+        ].copy()
+
+    # Define injury status.
+    # Blank injury levels remain missing, not zero injury.
+    injury = (
+        df["person_injury_lvl"]
+        .fillna("")
+        .str.upper()
+    )
+
+    known_injury_labels = {
+        "PAIN",
+        "VISIBLE",
+        "MINOR",
+        "POSSIBLE",
+        "SERIOUS",
+        "SEVERE",
+        "FATAL",
+    }
+
+    serious_labels = {
+        "SERIOUS",
+        "SEVERE",
+    }
+
+    df["injury_known"] = injury.isin(
+        known_injury_labels
+    )
+
+    df["serious_or_fatal"] = injury.isin(
+        serious_labels | {"FATAL"}
+    )
+
+    df["fatal"] = injury.eq("FATAL")
+
+    df["severity_group"] = "Unknown"
+
+    df.loc[
+        injury.eq("FATAL"),
+        "severity_group",
+    ] = "Fatal"
+
+    df.loc[
+        injury.isin(serious_labels),
+        "severity_group",
+    ] = "Serious/severe"
+
+    df.loc[
+        injury.isin(
+            known_injury_labels
+            - serious_labels
+            - {"FATAL"}
+        ),
+        "severity_group",
+    ] = "Other known injury"
+
+    return df
+
+
+# %% 4. Load police-beat polygons and create representative coordinates
+
+def load_police_beats():
+    """
+    Read the GeoJSON and create one dissolved polygon per police beat.
+
+    The GeoJSON contains broad beat-0 features. These are excluded because
+    they are not individual police-beat polygons.
+    """
+
+    if not BEAT_GEOJSON.exists():
+        raise FileNotFoundError(
+            f"Police-beat GeoJSON was not found: {BEAT_GEOJSON}"
+        )
+
+    beats = gpd.read_file(BEAT_GEOJSON)
+
+    beats["police_beat"] = beats[
+        "beat"
+    ].map(normalize_beat)
+
+    # Remove broad boundary features.
+    beats = beats.loc[
+        beats["police_beat"] != "0"
+    ].copy()
+
+    # Merge multipart polygons belonging to the same beat.
+    beats = beats.dissolve(
+        by="police_beat",
+        as_index=False,
+    )
+
+    # Use WGS84 for ArcGIS Online and latitude/longitude fields.
+    beats = beats.to_crs(
+        epsg=4326
+    )
+
+    # representative_point stays inside the polygon more reliably than centroid.
+    representative_points = beats.geometry.representative_point()
+
+    coordinates = pd.DataFrame({
+        "police_beat": beats["police_beat"],
+        "longitude": representative_points.x,
+        "latitude": representative_points.y,
+        "coordinate_method": (
+            "Police-beat representative point; "
+            "not exact collision location"
+        ),
+    })
+
+    return beats, coordinates
+
+
+def attach_coordinates(participants, coordinates):
+    """Attach beat-level representative coordinates to each participant."""
+
+    participants = participants.merge(
+        coordinates,
+        on="police_beat",
+        how="left",
+        validate="many_to_one",
+    )
+
+    participants["has_beat_coordinates"] = (
+        participants["latitude"].notna()
+        & participants["longitude"].notna()
+    )
+
+    return participants
+
+
+# %% 5. Create participant-level and collision-level datasets
+
+def create_analysis_levels(participants):
+    """
+    Create two analytical levels.
+
+    Participant level:
+        One row per participant record.
+
+    Collision level:
+        One row per unique report_id.
+    """
+
+    # Collision frequency must use unique report_id.
+    collisions = (
+        participants
+        .sort_values(["report_id", "date_time"])
+        .drop_duplicates(
+            subset="report_id",
+            keep="first",
+        )
+        .copy()
+    )
+
+    # Calculate collision-level participant totals once.
+    collision_totals = (
+        participants
+        .groupby("report_id")
+        .agg(
+            participant_records=("report_id", "size"),
+            known_injury_records=("injury_known", "sum"),
+            serious_fatal_records=("serious_or_fatal", "sum"),
+            fatal_records=("fatal", "sum"),
+        )
+        .reset_index()
+    )
+
+    collisions = collisions.drop(
+        columns=[
+            "participant_records",
+            "known_injury_records",
+            "serious_fatal_records",
+            "fatal_records",
+        ],
+        errors="ignore",
+    )
+
+    collisions = collisions.merge(
+        collision_totals,
+        on="report_id",
+        how="left",
+        validate="one_to_one",
+    )
+
+    # Export complete two-level datasets.
+    participants.to_csv(
+        PROCESSED_DIR
+        / "participants_2018_2025_with_coordinates.csv",
+        index=False,
+    )
+
+    collisions.to_csv(
+        PROCESSED_DIR
+        / "collisions_2018_2025_with_coordinates.csv",
+        index=False,
+    )
+
+    # Export separate files for every year.
+    for year in range(
+        START_YEAR,
+        END_YEAR + 1,
+    ):
+        participants.loc[
+            participants["year"].eq(year)
+        ].to_csv(
+            YEARLY_DIR
+            / f"participants_{year}_with_coordinates.csv",
+            index=False,
+        )
+
+        collisions.loc[
+            collisions["year"].eq(year)
+        ].to_csv(
+            YEARLY_DIR
+            / f"collisions_{year}_with_coordinates.csv",
+            index=False,
+        )
+
+    return participants, collisions
+
+
+# %% 6. Calculate annual and police-beat summaries
+
+def calculate_summaries(participants, collisions):
+    """Create annual and police-beat-year summary tables."""
+
+    annual_collision = (
+        collisions
+        .groupby("year")
+        .agg(
+            unique_collisions=("report_id", "nunique")
+        )
+        .reset_index()
+    )
+
+    annual_severity = (
+        participants
+        .groupby("year")
+        .agg(
+            participant_records=("report_id", "size"),
+            known_injury_records=("injury_known", "sum"),
+            serious_fatal_records=("serious_or_fatal", "sum"),
+            fatal_records=("fatal", "sum"),
+        )
+        .reset_index()
+    )
+
+    annual_severity["serious_fatal_rate"] = (
+        annual_severity["serious_fatal_records"]
+        / annual_severity["known_injury_records"]
+    )
+
+    annual = annual_collision.merge(
+        annual_severity,
+        on="year",
+        how="outer",
+    )
+
+    annual.to_csv(
+        TABLE_DIR
+        / "annual_trends_2018_2025.csv",
+        index=False,
+    )
+
+    beat_frequency = (
+        collisions
+        .groupby(["year", "police_beat"])
+        .agg(
+            unique_collisions=("report_id", "nunique")
+        )
+        .reset_index()
+    )
+
+    beat_severity = (
+        participants
+        .groupby(["year", "police_beat"])
+        .agg(
+            participant_records=("report_id", "size"),
+            known_injury_records=("injury_known", "sum"),
+            serious_fatal_records=("serious_or_fatal", "sum"),
+            fatal_records=("fatal", "sum"),
+            latitude=("latitude", "first"),
+            longitude=("longitude", "first"),
+        )
+        .reset_index()
+    )
+
+    beat_year = beat_frequency.merge(
+        beat_severity,
+        on=["year", "police_beat"],
+        how="outer",
+    )
+
+    beat_year["serious_fatal_rate"] = (
+        beat_year["serious_fatal_records"]
+        / beat_year["known_injury_records"]
+        .replace(0, float("nan"))
+    )
+
+    beat_year["severity_eligible"] = (
+        beat_year["known_injury_records"]
+        >= MIN_KNOWN_INJURY_N
+    )
+
+    beat_year["coordinate_method"] = (
+        "Police-beat representative point; "
+        "not exact collision location"
+    )
+
+    beat_year.to_csv(
+        TABLE_DIR
+        / "police_beat_year_summary_2018_2025.csv",
+        index=False,
+    )
+
+    selected = beat_year.loc[
+        beat_year["year"].isin(SELECTED_YEARS)
+    ].copy()
+
+    selected.to_csv(
+        TABLE_DIR
+        / "police_beat_year_summary_selected_2018_2020_2025.csv",
+        index=False,
+    )
+
+    return annual, beat_year, selected
+
+
+# %% 7. Create one dual-axis annual trend figure
+
+def plot_annual_trends(annual):
+    """
+    Create one dual-axis figure.
+
+    Left y-axis:
+        Annual unique collision records.
+
+    Right y-axis:
+        Annual serious/fatal injury rate.
+    """
+
+    fig, ax_left = plt.subplots(
+        figsize=(7.5, 4.5)
+    )
+
+    # Left axis: collision record counts.
+    line_collision, = ax_left.plot(
+        annual["year"],
+        annual["unique_collisions"],
+        marker="o",
+        linewidth=2.2,
+        color=COLORS["blue_4"],
+        label="Unique collision reports",
+    )
+
+    ax_left.set_xlabel("Year")
+    ax_left.set_ylabel(
+        "Unique collision reports",
+        color=COLORS["blue_5"],
+    )
+
+    ax_left.tick_params(
+        axis="y",
+        labelcolor=COLORS["blue_5"],
+    )
+
+    ax_left.set_xticks(annual["year"])
+    ax_left.tick_params(
+        axis="x",
+        rotation=45,
+    )
+
+    # Keep only horizontal gridlines.
+    ax_left.grid(
+        axis="y",
+        color=COLORS["light_gray"],
+        linewidth=0.8,
+    )
+
+    ax_left.grid(
+        axis="x",
+        visible=False,
+    )
+
+    # Right axis: serious/fatal injury rate.
+    ax_right = ax_left.twinx()
+
+    line_rate, = ax_right.plot(
+        annual["year"],
+        annual["serious_fatal_rate"],
+        marker="s",
+        linewidth=2.2,
+        color=COLORS["red_5"],
+        label="Serious/fatal injury rate",
+    )
+
+    ax_right.set_ylabel(
+        "Serious/fatal injury rate",
+        color=COLORS["red_5"],
+    )
+
+    ax_right.tick_params(
+        axis="y",
+        labelcolor=COLORS["red_5"],
+    )
+
+    ax_right.yaxis.set_major_formatter(
+        PercentFormatter(
+            1.0,
+            decimals=0,
+        )
+    )
+
+    ax_right.grid(False)
+
+    ax_left.set_title(
+        "Annual collision frequency and serious/fatal injury rate, 2018–2025"
+    )
+
+    # Combine both lines into one legend.
+    lines = [
+        line_collision,
+        line_rate,
+    ]
+
+    labels = [
+        line.get_label()
+        for line in lines
+    ]
+
+    ax_left.legend(
+        lines,
+        labels,
+        loc="upper left",
+        frameon=False,
+    )
+
+    sns.despine(
+        ax=ax_left,
+        right=False,
+    )
+
+    save_figure(
+        fig,
+        "figure_1_annual_collision_and_injury_dual_axis_2018_2025",
+    )
+
+# %% 8. Create the representative-year comparison figure
+
+
+def plot_frequency_severity(selected):
+    """
+    Create three panels for 2018, 2020, and 2025.
+
+    Each point represents one police beat.
+    Only the outermost police beats are labelled.
+    """
+
+    plot_data = selected.loc[
+        selected["severity_eligible"]
+    ].copy()
+
+    fig, axes = plt.subplots(
+        1,
+        3,
+        figsize=(12, 4.8),
+        sharey=True,
+    )
+
+    for ax, year in zip(
+        axes,
+        SELECTED_YEARS,
+    ):
+
+        panel = plot_data.loc[
+            plot_data["year"].eq(year)
+        ].copy()
+
+        if panel.empty:
+            ax.set_title(str(year))
+            continue
+
+        frequency_median = panel[
+            "unique_collisions"
+        ].median()
+
+        severity_median = panel[
+            "serious_fatal_rate"
+        ].median()
+
+        # Plot all police beats.
+        ax.scatter(
+            panel["unique_collisions"],
+            panel["serious_fatal_rate"],
+            s=panel["known_injury_records"]
+            .clip(lower=MIN_KNOWN_INJURY_N)
+            * 0.7,
+            color=COLORS["teal"],
+            alpha=0.72,
+            edgecolor="white",
+            linewidth=0.6,
+        )
+
+        # Add median reference lines.
+        ax.axvline(
+            frequency_median,
+            color=COLORS["gray"],
+            linestyle="--",
+            linewidth=0.8,
+        )
+
+        ax.axhline(
+            severity_median,
+            color=COLORS["gray"],
+            linestyle="--",
+            linewidth=0.8,
+        )
+
+        # Select only the outermost police beats.
+        extreme_candidates = pd.concat(
+            [
+                panel.nlargest(
+                    1,
+                    "unique_collisions",
+                ),
+                panel.nsmallest(
+                    1,
+                    "unique_collisions",
+                ),
+                panel.nlargest(
+                    1,
+                    "serious_fatal_rate",
+                ),
+                panel.nsmallest(
+                    1,
+                    "serious_fatal_rate",
+                ),
+            ],
+            ignore_index=True,
+        ).drop_duplicates(
+            "police_beat"
+        )
+
+        # Label the selected outermost points.
+        label_offsets = [
+            (5, 5),
+            (5, -12),
+            (-5, 5),
+            (-5, -12),
+        ]
+
+        for index, (_, row) in enumerate(
+            extreme_candidates.iterrows()
+        ):
+
+            x_offset, y_offset = label_offsets[
+                index % len(label_offsets)
+            ]
+
+            horizontal_alignment = (
+                "left"
+                if x_offset > 0
+                else "right"
+            )
+
+            ax.annotate(
+                f"Beat {row['police_beat']}",
+                (
+                    row["unique_collisions"],
+                    row["serious_fatal_rate"],
+                ),
+                xytext=(
+                    x_offset,
+                    y_offset,
+                ),
+                textcoords="offset points",
+                ha=horizontal_alignment,
+                fontsize=8,
+                color=COLORS["black"],
+                bbox=dict(
+                    boxstyle="round,pad=0.18",
+                    facecolor="white",
+                    edgecolor=COLORS["gray"],
+                    alpha=0.9,
+                ),
+                arrowprops=dict(
+                    arrowstyle="-",
+                    color=COLORS["gray"],
+                    linewidth=0.5,
+                ),
+            )
+
+        ax.set_title(str(year))
+        ax.set_xlabel(
+            "Unique collision reports"
+        )
+
+        ax.grid(
+            color=COLORS["light_gray"],
+            linewidth=0.7,
+        )
+
+        sns.despine(
+            ax=ax,
+            left=False,
+            bottom=False,
+        )
+
+    axes[0].set_ylabel(
+        "Serious/fatal injury rate"
+    )
+
+    axes[0].yaxis.set_major_formatter(
+        PercentFormatter(
+            1.0,
+            decimals=0,
+        )
+    )
+
+    # Create a shared legend for point size and median lines.
+    size_handles = []
+
+    for record_count in [
+        30,
+        100,
+        200,
+    ]:
+
+        size_handles.append(
+            axes[-1].scatter(
+                [],
+                [],
+                s=record_count * 0.7,
+                color=COLORS["teal"],
+                alpha=0.72,
+                edgecolor="white",
+                linewidth=0.6,
+                label=(
+                    f"{record_count} known "
+                    "injury records"
+                ),
+            )
+        )
+
+    median_handle = mpl.lines.Line2D(
+        [],
+        [],
+        color=COLORS["gray"],
+        linestyle="--",
+        linewidth=0.8,
+        label="Median split",
+    )
+
+    fig.legend(
+        handles=size_handles + [
+            median_handle
+        ],
+        loc="lower center",
+        bbox_to_anchor=(
+            0.5,
+            0.015,
+        ),
+        ncol=4,
+        frameon=False,
+        fontsize=8,
+        title="Plot guide",
+        title_fontsize=9,
+    )
+
+    fig.suptitle(
+        "Collision frequency and injury severity by police beat",
+        fontsize=14,
+        fontweight="bold",
+        y=0.99,
+    )
+
+    fig.text(
+        0.01,
+        -0.04,
+        "Each point represents a police beat. "
+        "Only the outermost police beats are labelled. "
+        "Point size represents known injury records.",
+        fontsize=8,
+        color=COLORS["black"],
+    )
+
+    fig.subplots_adjust(
+        bottom=0.25,
+        top=0.86,
+        wspace=0.15,
+    )
+
+    save_figure(
+        fig,
+        "figure_3_frequency_severity_selected_years",
+    )
+
+# %% 9. Create ArcGIS Online GeoJSON layers
+
+def create_arcgis_layers(beats, selected):
+    """
+    Join selected-year metrics to beat polygons.
+
+    One GeoJSON is exported for each representative year.
+    """
+
+    selected = selected.copy()
+
+    # Use common classes across all selected years.
+    selected["frequency_class"] = classify_global_quantiles(
+        selected["unique_collisions"],
+        "Frequency",
+    )
+
+    selected["severity_class"] = "Not eligible"
+
+    eligible = (
+        selected["severity_eligible"]
+        & selected["serious_fatal_rate"].notna()
+    )
+
+    selected.loc[
+        eligible,
+        "severity_class",
+    ] = classify_global_quantiles(
+        selected.loc[
+            eligible,
+            "serious_fatal_rate",
+        ],
+        "Severity",
+    )
+
+    selected.to_csv(
+        TABLE_DIR
+        / "selected_year_map_properties.csv",
+        index=False,
+    )
+
+    for year in SELECTED_YEARS:
+        properties = selected.loc[
+            selected["year"].eq(year)
+        ].copy()
+
+        layer = beats.merge(
+            properties,
+            on="police_beat",
+            how="left",
+            validate="one_to_one",
+        )
+
+        layer["map_year"] = year
+
+        layer["analysis_status"] = (
+            "No collision summary for this beat-year"
+        )
+
+        layer.loc[
+            layer["unique_collisions"].notna(),
+            "analysis_status",
+        ] = "Frequency available"
+
+        layer.loc[
+            layer["severity_eligible"].eq(False),
+            "analysis_status",
+        ] = "Severity denominator too small"
+
+        layer.to_file(
+            SPATIAL_DIR
+            / f"police_beats_{year}_analysis.geojson",
+            driver="GeoJSON",
+        )
+
+
+# %% 10. Run the complete workflow
+
+make_directories()
+
+participants = load_and_clean_participants()
+
+beats, coordinates = load_police_beats()
+
+participants = attach_coordinates(
+    participants,
+    coordinates,
+)
+
+participants, collisions = create_analysis_levels(
+    participants
+)
+
+annual, beat_year, selected = calculate_summaries(
+    participants,
+    collisions,
+)
+
+plot_annual_trends(
+    annual
+)
+
+plot_frequency_severity(
+    selected
+)
+
+create_arcgis_layers(
+    beats,
+    selected,
+)
+
+print("Workflow completed successfully.")
+print(f"Participant records: {len(participants):,}")
+print(f"Unique collisions: {len(collisions):,}")
+print(f"Selected map years: {SELECTED_YEARS}")
+# %%

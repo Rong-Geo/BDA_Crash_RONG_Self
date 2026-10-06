@@ -1,210 +1,216 @@
 year,police_beat,unique_collisions,participant_records,known_injury_records,serious_fatal_records,fatal_records,latitude,longitude,serious_fatal_rate,severity_eligible,coordinate_method,frequency_class,severity_class
-2016,111,70,109,28,1,1,32.81770454015894,-117.1705278025942,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,112,14,24,10,1,0,32.81047946026704,-117.18769143599107,0.1,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,113,33,52,25,2,1,32.82444992896318,-117.21864400105085,0.08,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,114,31,48,15,0,0,32.829658103655376,-117.20426920911271,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,115,102,163,45,3,0,32.86966313233439,-117.21197916564599,0.06666666666666667,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2016,116,32,51,14,2,0,32.7908774997026,-117.19770197666779,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,121,25,35,9,2,1,32.77481165227195,-117.25178198162368,0.2222222222222222,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,122,210,346,87,2,0,32.80138866666046,-117.23577882171637,0.022988505747126436,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2016,123,42,63,20,1,0,32.777830070383246,-117.22767002450135,0.05,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,124,120,167,45,2,0,32.83885413538784,-117.25836882736988,0.044444444444444446,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2016,126,17,28,10,0,0,32.892381430965,-117.24032813563096,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,21,1,2,2,0,0,32.68225802058488,-117.0853754038898,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,231,11,20,6,0,0,32.9507045521999,-117.0940264562798,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,232,29,43,11,1,0,32.98105952053426,-117.07570836367637,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,233,58,86,16,0,0,32.96218052996461,-117.12299174891572,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,234,66,109,46,0,0,33.033630033425176,-117.07040835691859,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
-2016,235,19,29,19,2,0,33.082709341795365,-116.99513841518677,0.10526315789473684,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,241,36,54,17,1,0,32.88634531749301,-117.0564648801472,0.058823529411764705,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,242,144,243,76,1,1,32.91947899976272,-117.1426172010863,0.013157894736842105,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2016,243,40,68,22,1,1,32.870391979565866,-117.15308981578755,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,245,1,1,0,0,0,32.93204297477473,-117.00772967955226,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,246,23,31,12,0,0,32.93141133761594,-117.08976111807016,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,311,58,86,19,1,1,32.792844777392105,-117.13085133944696,0.05263157894736842,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,312,38,53,12,0,0,32.83444136883477,-117.08256786059422,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,313,99,147,49,4,1,32.83054722226561,-117.14278671565819,0.08163265306122448,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2016,314,16,24,6,1,1,33.18737517952651,-117.23066947053908,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,315,91,143,46,0,0,32.773422052363586,-117.14213316310999,0.0,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2016,316,9,11,1,0,0,32.78292199901396,-117.11924623673008,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,321,59,102,30,1,0,32.7956980896065,-117.09979247672425,0.03333333333333333,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2016,322,18,25,8,0,0,32.79664845581645,-117.07993976055249,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,323,10,14,2,0,0,32.78719487543675,-117.06457435877357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,324,30,47,18,2,1,32.818671851023076,-117.03047373719554,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,325,16,26,10,2,2,32.8031127689942,-117.0507809366459,0.2,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,326,35,57,12,1,0,33.21520407905139,-117.158853043931,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,327,29,48,12,4,1,32.77187444242221,-117.0584304876291,0.3333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,431,18,27,8,0,0,33.068726208608545,-116.84503457088576,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,432,27,36,11,0,0,33.07521573004986,-116.7893009897486,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,433,31,50,14,2,0,33.01885171507661,-116.97490241410009,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,434,7,12,4,0,0,33.02079779583591,-116.93927795692584,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,436,15,22,3,0,0,33.03875431313823,-116.83634997698923,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,437,43,60,17,0,0,33.034426253998184,-116.76383218676057,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,438,23,34,6,1,0,32.964962072509046,-116.93198165582515,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,439,4,6,1,0,0,32.97521387218142,-116.90067834867656,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,441,57,98,21,2,0,32.69889849972856,-117.10769763142628,0.09523809523809523,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,442,19,31,9,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,443,11,22,6,0,0,32.96526740900654,-116.7621984178671,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,444,19,28,6,0,0,33.12355440646557,-116.85268610311729,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,445,27,45,11,1,0,33.08358611664043,-116.77307253626101,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,446,35,59,20,2,0,32.69913772804682,-117.08992016000654,0.1,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,447,23,37,11,1,0,32.727380344558014,-117.09407870897448,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,451,45,75,18,1,0,32.73177907125266,-117.07498111047565,0.05555555555555555,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,452,11,16,3,0,0,32.70231816405372,-117.0621023335037,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,511,51,82,29,0,0,32.6923534985372,-117.13284733903458,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,512,49,80,16,1,0,32.699800986596294,-117.13052814317592,0.0625,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,514,14,20,7,0,0,32.842704320208426,-116.97648996726558,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,515,12,22,5,0,0,32.845674806706285,-116.96352948421804,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,516,8,12,4,0,0,32.82696488216109,-117.01406118593331,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,517,29,48,9,0,0,32.71632203758088,-117.13433778552573,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,518,14,24,6,1,0,32.83248265911578,-116.99224126939387,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,521,76,118,38,0,0,32.90328552933019,-116.95068831877407,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
-2016,522,25,42,9,0,0,32.92186076942686,-116.89993698061527,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,523,20,36,10,0,0,32.95617399388699,-116.8361320030119,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,524,57,98,38,1,0,32.89382936706996,-116.85701579124563,0.02631578947368421,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2016,525,6,8,1,0,0,32.879951936980746,-116.93973829827166,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,526,27,47,13,0,0,32.72152809229162,-117.15666960759938,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,527,10,18,8,1,1,32.86352947495234,-116.93136247772748,0.125,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,528,15,20,4,0,0,32.86415703284928,-116.91022290750075,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,529,36,64,20,1,1,32.84017041201663,-116.93920835327967,0.05,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,531,13,16,8,1,0,32.84321580839031,-116.90016213002147,0.125,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,541,1,1,0,0,0,32.9291747187676,-116.77443218034055,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,611,91,141,38,4,1,32.74087129851641,-117.20029111792292,0.10526315789473684,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
-2016,612,8,10,2,0,0,32.772107860227166,-116.96843105192859,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,613,52,74,22,0,0,32.77374071883966,-116.94185098320088,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,614,56,91,17,0,0,32.74620175051584,-117.2480835727332,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,615,25,35,10,1,0,32.75527723592303,-116.97723684721086,0.1,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,616,4,5,1,0,0,32.752628141220626,-116.94692878514448,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,617,5,7,4,0,0,32.75249442181715,-116.91730098864045,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,618,5,6,0,0,0,32.76328831123388,-116.86528797307204,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,621,55,90,21,1,0,32.78474350011991,-117.17350386676355,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,622,41,59,19,0,0,32.77053271608819,-117.1930381983357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,623,24,27,2,1,0,32.764147409640195,-117.17795146796615,0.5,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,624,31,45,8,0,0,32.72581659624629,-116.95774643171607,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,625,11,15,5,0,0,32.71166795495702,-116.92295457345952,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,626,15,21,5,1,0,32.719860513153876,-116.86898081471712,0.2,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,627,108,159,36,4,1,32.7006865484599,-116.81568469167085,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
-2016,628,28,47,10,1,0,32.72528832037109,-117.00586281519546,0.1,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,711,3,4,1,0,0,32.54811512377198,-117.08682754599928,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,712,47,80,25,0,0,32.555674316681994,-117.04801204711242,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,713,16,25,11,1,0,32.564553838907365,-116.98788827590417,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,714,3,5,1,0,0,32.54451595061849,-117.03039487125258,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,721,30,53,12,1,0,32.58281392644402,-117.09825832771111,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,722,28,43,7,1,0,32.66711452591835,-117.00913888789105,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,723,46,83,23,2,1,32.57840310808878,-117.05675680465119,0.08695652173913043,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,724,14,24,8,1,1,32.658852893134195,-116.91503007193131,0.125,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,725,18,24,10,0,0,32.579466998319205,-117.01896798018487,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,811,21,28,9,0,0,33.28874302390258,-116.89331559684965,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,812,1,2,0,0,0,33.21204047910238,-117.05224848023076,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,813,138,209,40,2,0,33.256640818090105,-117.00146499740242,0.05,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2016,814,14,24,7,0,0,33.26344978308218,-116.94514831328809,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,821,36,58,14,0,0,33.26397631835824,-116.82746789804872,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,822,44,67,22,1,0,33.31983921529675,-116.64556173889338,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,823,5,8,2,0,0,33.28929194546852,-116.54504232398082,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,824,47,77,22,1,1,33.19173535658806,-116.84455296904608,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,825,34,57,18,0,0,33.084010908673356,-116.75174244288297,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,826,37,52,14,1,0,33.191680768548515,-116.75401223889719,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,827,11,17,2,0,0,33.16683113642124,-116.71801267107438,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,828,5,7,3,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,831,42,72,20,2,0,33.09266461258565,-116.70240144470779,0.1,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2016,832,29,42,11,0,0,33.07539925544093,-116.6052377489849,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,833,19,26,7,1,0,32.92600127248982,-116.74717314242025,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,834,25,35,12,0,0,32.968833167875026,-116.57150084330075,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,835,12,21,3,0,0,32.97695935736729,-116.54247377392124,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,836,8,20,3,0,0,32.973992625535146,-116.51467538268406,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,837,7,9,2,0,0,32.724376080510794,-117.1086256590632,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,838,26,40,11,0,0,32.75206244852271,-117.11659179402932,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2016,839,8,11,2,0,0,32.743506326674634,-117.11462286707754,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,841,7,10,4,0,0,33.2656976505115,-116.17118308305773,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,931,57,100,50,4,1,32.89512014912518,-117.19382843269258,0.08,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
-2016,932,6,11,6,2,0,32.920274611200256,-117.24808516611526,0.3333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,933,5,10,7,0,0,32.955217133425855,-117.25020174535538,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,934,57,82,29,1,0,32.937283051376355,-117.20530507023517,0.034482758620689655,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2016,935,10,17,8,0,0,32.97265838878731,-117.21436342450443,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,936,11,18,4,0,0,32.963308316764014,-117.15873147780599,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,937,13,17,11,1,0,32.999781625715784,-117.14550256158267,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2016,999,15,20,3,0,0,,,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,111,151,235,68,5,2,32.81770454015894,-117.1705278025942,0.07352941176470588,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,112,57,94,33,0,0,32.81047946026704,-117.18769143599107,0.0,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very low
+2018,113,61,97,32,4,0,32.82444992896318,-117.21864400105085,0.125,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2018,114,93,159,59,1,0,32.829658103655376,-117.20426920911271,0.01694915254237288,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
+2018,115,249,393,119,4,0,32.86966313233439,-117.21197916564599,0.03361344537815126,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,116,93,157,35,5,2,32.7908774997026,-117.19770197666779,0.14285714285714285,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2018,121,108,145,51,0,0,32.77481165227195,-117.25178198162368,0.0,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2018,122,517,823,226,15,0,32.80138866666046,-117.23577882171637,0.06637168141592921,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,123,128,190,70,6,1,32.777830070383246,-117.22767002450135,0.08571428571428572,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,124,279,406,104,4,1,32.83885413538784,-117.25836882736988,0.038461538461538464,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,126,48,76,34,1,0,32.892381430965,-117.24032813563096,0.029411764705882353,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Low
+2018,20,1,1,0,0,0,33.27956722248379,-117.26215981462877,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,231,34,49,16,0,0,32.9507045521999,-117.0940264562798,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,232,90,143,38,3,0,32.98105952053426,-117.07570836367637,0.07894736842105263,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2018,233,106,163,52,3,0,32.96218052996461,-117.12299174891572,0.057692307692307696,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,234,151,234,92,4,2,33.033630033425176,-117.07040835691859,0.043478260869565216,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,235,26,33,19,2,0,33.082709341795365,-116.99513841518677,0.10526315789473684,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,24,1,1,0,0,0,32.595043530530916,-117.04082636625182,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,241,59,100,47,0,0,32.88634531749301,-117.0564648801472,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
+2018,242,267,445,136,12,4,32.91947899976272,-117.1426172010863,0.08823529411764706,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2018,243,110,180,68,1,0,32.870391979565866,-117.15308981578755,0.014705882352941176,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2018,245,3,5,4,0,0,32.93204297477473,-117.00772967955226,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,246,50,79,33,2,0,32.93141133761594,-117.08976111807016,0.06060606060606061,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
+2018,311,123,186,43,4,2,32.792844777392105,-117.13085133944696,0.09302325581395349,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2018,312,61,95,35,1,0,32.83444136883477,-117.08256786059422,0.02857142857142857,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2018,313,321,493,131,6,0,32.83054722226561,-117.14278671565819,0.04580152671755725,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,314,41,55,13,0,0,33.18737517952651,-117.23066947053908,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,315,209,316,97,5,0,32.773422052363586,-117.14213316310999,0.05154639175257732,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,316,3,3,0,0,0,32.78292199901396,-117.11924623673008,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,321,127,201,60,2,0,32.7956980896065,-117.09979247672425,0.03333333333333333,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,322,48,82,24,1,0,32.79664845581645,-117.07993976055249,0.041666666666666664,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,323,24,41,9,1,1,32.78719487543675,-117.06457435877357,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,324,47,74,23,0,0,32.818671851023076,-117.03047373719554,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,325,36,58,21,1,0,32.8031127689942,-117.0507809366459,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,326,84,125,32,1,0,33.21520407905139,-117.158853043931,0.03125,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2018,327,43,65,19,0,0,32.77187444242221,-117.0584304876291,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,380,1,2,2,1,1,33.10040743521434,-117.03999330267044,0.5,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,431,30,53,15,1,1,33.068726208608545,-116.84503457088576,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,432,50,89,28,1,0,33.07521573004986,-116.7893009897486,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,433,50,75,25,3,1,33.01885171507661,-116.97490241410009,0.12,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,434,56,98,25,0,0,33.02079779583591,-116.93927795692584,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,435,3,6,1,0,0,33.0244194806951,-116.88034977660124,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,436,46,74,21,2,0,33.03875431313823,-116.83634997698923,0.09523809523809523,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,437,111,187,61,6,2,33.034426253998184,-116.76383218676057,0.09836065573770492,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2018,438,45,71,17,2,1,32.964962072509046,-116.93198165582515,0.11764705882352941,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,439,5,7,2,0,0,32.97521387218142,-116.90067834867656,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,441,135,233,60,3,0,32.69889849972856,-117.10769763142628,0.05,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,442,46,82,18,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,443,38,66,22,1,0,32.96526740900654,-116.7621984178671,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,444,49,76,22,0,0,33.12355440646557,-116.85268610311729,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,445,61,99,29,4,0,33.08358611664043,-116.77307253626101,0.13793103448275862,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,446,98,161,51,2,1,32.69913772804682,-117.08992016000654,0.0392156862745098,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,447,74,111,29,0,0,32.727380344558014,-117.09407870897448,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,451,101,160,45,3,2,32.73177907125266,-117.07498111047565,0.06666666666666667,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,452,26,46,14,0,0,32.70231816405372,-117.0621023335037,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,511,129,201,62,5,1,32.6923534985372,-117.13284733903458,0.08064516129032258,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,512,105,170,39,1,0,32.699800986596294,-117.13052814317592,0.02564102564102564,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2018,514,32,54,12,1,0,32.842704320208426,-116.97648996726558,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,515,35,61,23,1,0,32.845674806706285,-116.96352948421804,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,516,35,52,14,1,0,32.82696488216109,-117.01406118593331,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,517,47,75,21,2,0,32.71632203758088,-117.13433778552573,0.09523809523809523,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,518,24,38,8,1,0,32.83248265911578,-116.99224126939387,0.125,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,521,235,372,115,3,0,32.90328552933019,-116.95068831877407,0.02608695652173913,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,522,39,50,17,3,0,32.92186076942686,-116.89993698061527,0.17647058823529413,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,523,50,70,22,1,0,32.95617399388699,-116.8361320030119,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,524,215,336,123,4,1,32.89382936706996,-116.85701579124563,0.032520325203252036,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,525,28,44,11,1,0,32.879951936980746,-116.93973829827166,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,526,64,109,32,6,0,32.72152809229162,-117.15666960759938,0.1875,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2018,527,27,42,8,0,0,32.86352947495234,-116.93136247772748,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,528,39,62,15,1,0,32.86415703284928,-116.91022290750075,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,529,91,153,52,3,0,32.84017041201663,-116.93920835327967,0.057692307692307696,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
+2018,531,60,78,18,3,0,32.84321580839031,-116.90016213002147,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,541,11,13,5,0,0,32.9291747187676,-116.77443218034055,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,600,1,1,0,0,0,,,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,611,237,368,106,9,0,32.74087129851641,-117.20029111792292,0.08490566037735849,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,612,40,63,20,1,0,32.772107860227166,-116.96843105192859,0.05,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,613,131,202,40,3,0,32.77374071883966,-116.94185098320088,0.075,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,614,201,305,55,6,1,32.74620175051584,-117.2480835727332,0.10909090909090909,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2018,615,69,102,29,2,1,32.75527723592303,-116.97723684721086,0.06896551724137931,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,616,5,8,2,1,0,32.752628141220626,-116.94692878514448,0.5,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,617,7,10,3,0,0,32.75249442181715,-116.91730098864045,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,618,11,14,6,0,0,32.76328831123388,-116.86528797307204,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,621,135,215,62,4,1,32.78474350011991,-117.17350386676355,0.06451612903225806,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2018,622,80,108,20,1,1,32.77053271608819,-117.1930381983357,0.05,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,623,87,105,16,0,0,32.764147409640195,-117.17795146796615,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,624,89,146,44,6,0,32.72581659624629,-116.95774643171607,0.13636363636363635,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2018,625,50,71,14,2,0,32.71166795495702,-116.92295457345952,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,626,46,71,21,3,1,32.719860513153876,-116.86898081471712,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,627,235,365,95,4,0,32.7006865484599,-116.81568469167085,0.042105263157894736,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,628,33,49,12,1,0,32.72528832037109,-117.00586281519546,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,711,4,5,4,0,0,32.54811512377198,-117.08682754599928,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,712,156,262,68,4,3,32.555674316681994,-117.04801204711242,0.058823529411764705,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,713,49,79,31,3,1,32.564553838907365,-116.98788827590417,0.0967741935483871,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
+2018,714,13,18,3,0,0,32.54451595061849,-117.03039487125258,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,721,91,154,51,2,1,32.58281392644402,-117.09825832771111,0.0392156862745098,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2018,722,43,72,18,0,0,32.66711452591835,-117.00913888789105,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,723,101,169,53,3,2,32.57840310808878,-117.05675680465119,0.05660377358490566,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,724,23,40,15,2,0,32.658852893134195,-116.91503007193131,0.13333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,725,33,50,12,0,0,32.579466998319205,-117.01896798018487,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,811,48,75,15,0,0,33.28874302390258,-116.89331559684965,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,812,2,2,0,0,0,33.21204047910238,-117.05224848023076,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,813,291,437,122,4,2,33.256640818090105,-117.00146499740242,0.03278688524590164,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,814,40,62,19,1,1,33.26344978308218,-116.94514831328809,0.05263157894736842,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,821,94,156,44,2,0,33.26397631835824,-116.82746789804872,0.045454545454545456,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
+2018,822,83,123,38,4,0,33.31983921529675,-116.64556173889338,0.10526315789473684,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2018,823,28,43,4,0,0,33.28929194546852,-116.54504232398082,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,824,117,203,66,6,0,33.19173535658806,-116.84455296904608,0.09090909090909091,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2018,825,65,98,27,2,1,33.084010908673356,-116.75174244288297,0.07407407407407407,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,826,91,132,36,3,0,33.191680768548515,-116.75401223889719,0.08333333333333333,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2018,827,25,37,5,0,0,33.16683113642124,-116.71801267107438,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,828,21,33,4,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,829,1,2,1,0,0,33.03237928300737,-116.64394532399695,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,831,58,92,27,1,0,33.09266461258565,-116.70240144470779,0.037037037037037035,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,832,95,166,38,3,1,33.07539925544093,-116.6052377489849,0.07894736842105263,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2018,833,43,67,19,0,0,32.92600127248982,-116.74717314242025,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,834,70,116,19,1,0,32.968833167875026,-116.57150084330075,0.05263157894736842,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2018,835,44,66,12,1,0,32.97695935736729,-116.54247377392124,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2018,836,22,38,10,0,0,32.973992625535146,-116.51467538268406,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,837,23,34,9,0,0,32.724376080510794,-117.1086256590632,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,838,79,132,40,2,0,32.75206244852271,-117.11659179402932,0.05,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
+2018,839,26,40,13,0,0,32.743506326674634,-117.11462286707754,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,841,23,34,8,0,0,33.2656976505115,-116.17118308305773,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,904,1,1,0,0,0,,,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,931,108,178,76,4,0,32.89512014912518,-117.19382843269258,0.05263157894736842,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2018,932,10,15,9,1,0,32.920274611200256,-117.24808516611526,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,933,22,32,8,0,0,32.955217133425855,-117.25020174535538,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2018,934,138,206,75,2,2,32.937283051376355,-117.20530507023517,0.02666666666666667,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2018,935,33,53,19,0,0,32.97265838878731,-117.21436342450443,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,936,25,36,10,1,1,32.963308316764014,-117.15873147780599,0.1,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,937,34,49,21,1,0,32.999781625715784,-117.14550256158267,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2018,999,20,34,5,0,0,,,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,111,112,234,51,6,1,32.81770454015894,-117.1705278025942,0.11764705882352941,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2020,112,44,96,41,6,1,32.81047946026704,-117.18769143599107,0.14634146341463414,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
-2020,113,47,100,25,3,0,32.82444992896318,-117.21864400105085,0.12,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,113,47,100,25,3,0,32.82444992896318,-117.21864400105085,0.12,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,114,95,227,56,6,1,32.829658103655376,-117.20426920911271,0.10714285714285714,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2020,115,132,272,77,1,0,32.86966313233439,-117.21197916564599,0.012987012987012988,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2020,116,78,170,50,2,0,32.7908774997026,-117.19770197666779,0.04,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2020,121,83,165,38,1,0,32.77481165227195,-117.25178198162368,0.02631578947368421,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2020,121,83,165,38,1,0,32.77481165227195,-117.25178198162368,0.02631578947368421,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
 2020,122,424,880,192,12,0,32.80138866666046,-117.23577882171637,0.0625,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
 2020,123,132,326,106,7,0,32.777830070383246,-117.22767002450135,0.0660377358490566,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
 2020,124,202,387,94,7,1,32.83885413538784,-117.25836882736988,0.07446808510638298,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2020,126,32,65,23,1,0,32.892381430965,-117.24032813563096,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,126,32,65,23,1,0,32.892381430965,-117.24032813563096,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,231,28,57,18,2,0,32.9507045521999,-117.0940264562798,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,232,52,112,38,1,1,32.98105952053426,-117.07570836367637,0.02631578947368421,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2020,232,52,112,38,1,1,32.98105952053426,-117.07570836367637,0.02631578947368421,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Low
 2020,233,61,118,42,2,1,32.96218052996461,-117.12299174891572,0.047619047619047616,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
-2020,234,116,231,71,3,3,33.033630033425176,-117.07040835691859,0.04225352112676056,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2020,234,116,231,71,3,3,33.033630033425176,-117.07040835691859,0.04225352112676056,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
 2020,235,24,40,23,3,1,33.082709341795365,-116.99513841518677,0.13043478260869565,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,241,54,110,31,3,0,32.88634531749301,-117.0564648801472,0.0967741935483871,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2020,241,54,110,31,3,0,32.88634531749301,-117.0564648801472,0.0967741935483871,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
 2020,242,244,506,108,10,5,32.91947899976272,-117.1426172010863,0.09259259259259259,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2020,243,68,138,43,0,0,32.870391979565866,-117.15308981578755,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2020,245,8,11,3,1,1,32.93204297477473,-117.00772967955226,0.3333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2020,246,17,30,11,2,1,32.93141133761594,-117.08976111807016,0.18181818181818182,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,311,87,182,31,0,0,32.792844777392105,-117.13085133944696,0.0,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2020,312,49,104,31,2,0,32.83444136883477,-117.08256786059422,0.06451612903225806,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2020,246,17,30,11,2,1,32.93141133761594,-117.08976111807016,0.18181818181818182,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,311,87,182,31,0,0,32.792844777392105,-117.13085133944696,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
+2020,312,49,104,31,2,0,32.83444136883477,-117.08256786059422,0.06451612903225806,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: High
 2020,313,185,391,75,7,0,32.83054722226561,-117.14278671565819,0.09333333333333334,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
-2020,314,34,73,17,1,1,33.18737517952651,-117.23066947053908,0.058823529411764705,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,314,34,73,17,1,1,33.18737517952651,-117.23066947053908,0.058823529411764705,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,315,175,378,94,1,0,32.773422052363586,-117.14213316310999,0.010638297872340425,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2020,321,95,205,36,2,0,32.7956980896065,-117.09979247672425,0.05555555555555555,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
 2020,322,38,81,28,2,0,32.79664845581645,-117.07993976055249,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,323,31,61,15,0,0,32.78719487543675,-117.06457435877357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,323,31,61,15,0,0,32.78719487543675,-117.06457435877357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,324,38,74,13,3,1,32.818671851023076,-117.03047373719554,0.23076923076923078,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,325,24,55,20,0,0,32.8031127689942,-117.0507809366459,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,326,49,96,22,2,0,33.21520407905139,-117.158853043931,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,327,34,74,9,0,0,32.77187444242221,-117.0584304876291,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,431,20,53,7,0,0,33.068726208608545,-116.84503457088576,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,432,54,127,25,1,0,33.07521573004986,-116.7893009897486,0.04,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,433,55,126,36,4,1,33.01885171507661,-116.97490241410009,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2020,326,49,96,22,2,0,33.21520407905139,-117.158853043931,0.09090909090909091,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,327,34,74,9,0,0,32.77187444242221,-117.0584304876291,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,431,20,53,7,0,0,33.068726208608545,-116.84503457088576,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,432,54,127,25,1,0,33.07521573004986,-116.7893009897486,0.04,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,433,55,126,36,4,1,33.01885171507661,-116.97490241410009,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
 2020,434,41,93,14,3,2,33.02079779583591,-116.93927795692584,0.21428571428571427,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,435,3,5,1,0,0,33.0244194806951,-116.88034977660124,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2020,436,37,69,13,1,0,33.03875431313823,-116.83634997698923,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,437,94,211,56,2,2,33.034426253998184,-116.76383218676057,0.03571428571428571,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2020,436,37,69,13,1,0,33.03875431313823,-116.83634997698923,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,437,94,211,56,2,2,33.034426253998184,-116.76383218676057,0.03571428571428571,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
 2020,438,57,149,28,2,0,32.964962072509046,-116.93198165582515,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
 2020,439,7,14,4,0,0,32.97521387218142,-116.90067834867656,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,441,137,310,63,3,1,32.69889849972856,-117.10769763142628,0.047619047619047616,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2020,442,48,101,12,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,442,48,101,12,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,443,24,53,14,2,0,32.96526740900654,-116.7621984178671,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,444,40,82,22,4,2,33.12355440646557,-116.85268610311729,0.18181818181818182,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,445,51,101,28,1,0,33.08358611664043,-116.77307253626101,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,446,92,197,52,5,0,32.69913772804682,-117.08992016000654,0.09615384615384616,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2020,445,51,101,28,1,0,33.08358611664043,-116.77307253626101,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,446,92,197,52,5,0,32.69913772804682,-117.08992016000654,0.09615384615384616,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
 2020,447,39,78,18,0,0,32.727380344558014,-117.09407870897448,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,451,91,198,43,3,0,32.73177907125266,-117.07498111047565,0.06976744186046512,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2020,451,91,198,43,3,0,32.73177907125266,-117.07498111047565,0.06976744186046512,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
 2020,452,28,67,15,1,0,32.70231816405372,-117.0621023335037,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,511,151,300,82,0,0,32.6923534985372,-117.13284733903458,0.0,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2020,512,130,296,53,2,0,32.699800986596294,-117.13052814317592,0.03773584905660377,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2020,514,35,88,12,1,1,32.842704320208426,-116.97648996726558,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,515,35,86,22,3,1,32.845674806706285,-116.96352948421804,0.13636363636363635,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,514,35,88,12,1,1,32.842704320208426,-116.97648996726558,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,515,35,86,22,3,1,32.845674806706285,-116.96352948421804,0.13636363636363635,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,516,43,117,35,1,0,32.82696488216109,-117.01406118593331,0.02857142857142857,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Low
-2020,517,55,125,25,0,0,32.71632203758088,-117.13433778552573,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,518,30,56,12,0,0,32.83248265911578,-116.99224126939387,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,517,55,125,25,0,0,32.71632203758088,-117.13433778552573,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,518,30,56,12,0,0,32.83248265911578,-116.99224126939387,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,521,179,390,96,3,1,32.90328552933019,-116.95068831877407,0.03125,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2020,522,37,72,30,1,0,32.92186076942686,-116.89993698061527,0.03333333333333333,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Low
+2020,522,37,72,30,1,0,32.92186076942686,-116.89993698061527,0.03333333333333333,True,Police-beat representative point; not exact collision location,Frequency: Low,Severity: Low
 2020,523,26,48,7,0,0,32.95617399388699,-116.8361320030119,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,524,129,264,68,1,0,32.89382936706996,-116.85701579124563,0.014705882352941176,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2020,525,18,30,12,1,1,32.879951936980746,-116.93973829827166,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,525,18,30,12,1,1,32.879951936980746,-116.93973829827166,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,526,40,79,27,0,0,32.72152809229162,-117.15666960759938,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,527,26,52,10,1,0,32.86352947495234,-116.93136247772748,0.1,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,528,37,76,21,0,0,32.86415703284928,-116.91022290750075,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,529,62,137,35,3,0,32.84017041201663,-116.93920835327967,0.08571428571428572,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
-2020,531,47,81,21,2,0,32.84321580839031,-116.90016213002147,0.09523809523809523,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,528,37,76,21,0,0,32.86415703284928,-116.91022290750075,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,529,62,137,35,3,0,32.84017041201663,-116.93920835327967,0.08571428571428572,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2020,531,47,81,21,2,0,32.84321580839031,-116.90016213002147,0.09523809523809523,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,541,9,16,4,0,0,32.9291747187676,-116.77443218034055,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,611,175,329,79,9,2,32.74087129851641,-117.20029111792292,0.11392405063291139,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2020,612,28,54,14,0,0,32.772107860227166,-116.96843105192859,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,613,88,171,34,1,1,32.77374071883966,-116.94185098320088,0.029411764705882353,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2020,613,88,171,34,1,1,32.77374071883966,-116.94185098320088,0.029411764705882353,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
 2020,614,216,466,78,3,0,32.74620175051584,-117.2480835727332,0.038461538461538464,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2020,615,51,114,39,3,0,32.75527723592303,-116.97723684721086,0.07692307692307693,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2020,615,51,114,39,3,0,32.75527723592303,-116.97723684721086,0.07692307692307693,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: High
 2020,616,4,6,2,0,0,32.752628141220626,-116.94692878514448,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,617,8,18,4,0,0,32.75249442181715,-116.91730098864045,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2020,618,19,43,9,1,0,32.76328831123388,-116.86528797307204,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,618,19,43,9,1,0,32.76328831123388,-116.86528797307204,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,621,102,238,65,3,1,32.78474350011991,-117.17350386676355,0.046153846153846156,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2020,622,55,99,23,0,0,32.77053271608819,-117.1930381983357,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,622,55,99,23,0,0,32.77053271608819,-117.1930381983357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,623,64,113,20,0,0,32.764147409640195,-117.17795146796615,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,624,83,168,31,0,0,32.72581659624629,-116.95774643171607,0.0,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2020,624,83,168,31,0,0,32.72581659624629,-116.95774643171607,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2020,625,27,52,12,2,2,32.71166795495702,-116.92295457345952,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,626,29,54,8,1,0,32.719860513153876,-116.86898081471712,0.125,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,627,168,338,70,4,1,32.7006865484599,-116.81568469167085,0.05714285714285714,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
@@ -213,169 +219,169 @@ year,police_beat,unique_collisions,participant_records,known_injury_records,seri
 2020,712,116,275,53,5,3,32.555674316681994,-117.04801204711242,0.09433962264150944,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2020,713,62,106,30,4,1,32.564553838907365,-116.98788827590417,0.13333333333333333,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
 2020,714,12,25,5,0,0,32.54451595061849,-117.03039487125258,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2020,721,70,165,44,1,0,32.58281392644402,-117.09825832771111,0.022727272727272728,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2020,721,70,165,44,1,0,32.58281392644402,-117.09825832771111,0.022727272727272728,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2020,722,63,152,31,1,0,32.66711452591835,-117.00913888789105,0.03225806451612903,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2020,723,84,193,50,2,0,32.57840310808878,-117.05675680465119,0.04,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2020,724,31,61,15,0,0,32.658852893134195,-116.91503007193131,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,725,49,97,20,1,0,32.579466998319205,-117.01896798018487,0.05,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,811,55,110,20,0,0,33.28874302390258,-116.89331559684965,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,723,84,193,50,2,0,32.57840310808878,-117.05675680465119,0.04,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2020,724,31,61,15,0,0,32.658852893134195,-116.91503007193131,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,725,49,97,20,1,0,32.579466998319205,-117.01896798018487,0.05,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,811,55,110,20,0,0,33.28874302390258,-116.89331559684965,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,812,3,7,1,0,0,33.21204047910238,-117.05224848023076,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,813,251,520,87,3,0,33.256640818090105,-117.00146499740242,0.034482758620689655,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2020,814,22,44,13,0,0,33.26344978308218,-116.94514831328809,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,821,82,169,45,5,3,33.26397631835824,-116.82746789804872,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
-2020,822,85,185,48,5,1,33.31983921529675,-116.64556173889338,0.10416666666666667,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2020,814,22,44,13,0,0,33.26344978308218,-116.94514831328809,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,821,82,169,45,5,3,33.26397631835824,-116.82746789804872,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2020,822,85,185,48,5,1,33.31983921529675,-116.64556173889338,0.10416666666666667,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
 2020,823,27,67,11,0,0,33.28929194546852,-116.54504232398082,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,824,81,167,41,5,0,33.19173535658806,-116.84455296904608,0.12195121951219512,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
+2020,824,81,167,41,5,0,33.19173535658806,-116.84455296904608,0.12195121951219512,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
 2020,825,65,137,32,2,0,33.084010908673356,-116.75174244288297,0.0625,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
-2020,826,85,181,39,3,0,33.191680768548515,-116.75401223889719,0.07692307692307693,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2020,827,22,43,9,1,1,33.16683113642124,-116.71801267107438,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,828,16,34,3,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,826,85,181,39,3,0,33.191680768548515,-116.75401223889719,0.07692307692307693,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2020,827,22,43,9,1,1,33.16683113642124,-116.71801267107438,0.1111111111111111,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,828,16,34,3,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,829,2,3,1,0,0,33.03237928300737,-116.64394532399695,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,831,78,172,28,0,0,33.09266461258565,-116.70240144470779,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
 2020,832,58,129,32,0,0,33.07539925544093,-116.6052377489849,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
-2020,833,55,128,23,0,0,32.92600127248982,-116.74717314242025,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2020,833,55,128,23,0,0,32.92600127248982,-116.74717314242025,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2020,834,58,129,19,0,0,32.968833167875026,-116.57150084330075,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2020,835,34,77,15,1,0,32.97695935736729,-116.54247377392124,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,836,21,49,11,0,0,32.973992625535146,-116.51467538268406,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,835,34,77,15,1,0,32.97695935736729,-116.54247377392124,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,836,21,49,11,0,0,32.973992625535146,-116.51467538268406,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,837,12,22,4,0,0,32.724376080510794,-117.1086256590632,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,838,60,131,32,2,1,32.75206244852271,-117.11659179402932,0.0625,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
-2020,839,19,45,9,0,0,32.743506326674634,-117.11462286707754,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,841,29,72,16,1,0,33.2656976505115,-116.17118308305773,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2020,931,90,187,84,4,1,32.89512014912518,-117.19382843269258,0.047619047619047616,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2020,839,19,45,9,0,0,32.743506326674634,-117.11462286707754,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,841,29,72,16,1,0,33.2656976505115,-116.17118308305773,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2020,931,90,187,84,4,1,32.89512014912518,-117.19382843269258,0.047619047619047616,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
 2020,932,9,15,7,0,0,32.920274611200256,-117.24808516611526,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2020,933,26,49,11,0,0,32.955217133425855,-117.25020174535538,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,934,102,189,59,4,2,32.937283051376355,-117.20530507023517,0.06779661016949153,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
 2020,935,24,47,20,1,1,32.97265838878731,-117.21436342450443,0.05,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,936,17,33,17,2,1,32.963308316764014,-117.15873147780599,0.11764705882352941,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2020,937,33,58,22,4,2,32.999781625715784,-117.14550256158267,0.18181818181818182,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2020,936,17,33,17,2,1,32.963308316764014,-117.15873147780599,0.11764705882352941,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2020,937,33,58,22,4,2,32.999781625715784,-117.14550256158267,0.18181818181818182,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2020,999,9,19,3,0,0,,,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,1,1,4,1,0,0,32.70059250922437,-117.19677121171156,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,111,104,238,63,6,2,32.81770454015894,-117.1705278025942,0.09523809523809523,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2025,112,44,86,19,2,1,32.81047946026704,-117.18769143599107,0.10526315789473684,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,113,36,74,21,1,0,32.82444992896318,-117.21864400105085,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,113,36,74,21,1,0,32.82444992896318,-117.21864400105085,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,114,76,172,52,3,0,32.829658103655376,-117.20426920911271,0.057692307692307696,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
-2025,115,189,413,145,6,1,32.86966313233439,-117.21197916564599,0.041379310344827586,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
+2025,115,189,413,145,6,1,32.86966313233439,-117.21197916564599,0.041379310344827586,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
 2025,116,58,130,26,3,2,32.7908774997026,-117.19770197666779,0.11538461538461539,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2025,121,49,124,15,1,0,32.77481165227195,-117.25178198162368,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2025,121,49,124,15,1,0,32.77481165227195,-117.25178198162368,0.06666666666666667,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,122,313,721,209,17,3,32.80138866666046,-117.23577882171637,0.08133971291866028,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
 2025,123,122,278,93,8,2,32.777830070383246,-117.22767002450135,0.08602150537634409,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2025,124,200,423,114,8,2,32.83885413538784,-117.25836882736988,0.07017543859649122,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2025,126,35,74,23,0,0,32.892381430965,-117.24032813563096,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,126,35,74,23,0,0,32.892381430965,-117.24032813563096,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,200,1,3,0,0,0,,,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,23,1,3,1,0,0,32.614106773444405,-117.04147427020918,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,231,28,61,30,2,2,32.9507045521999,-117.0940264562798,0.06666666666666667,True,Police-beat representative point; not exact collision location,Frequency: Low,Severity: High
 2025,232,70,143,49,0,0,32.98105952053426,-117.07570836367637,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2025,233,95,216,70,1,1,32.96218052996461,-117.12299174891572,0.014285714285714285,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2025,234,95,209,71,3,0,33.033630033425176,-117.07040835691859,0.04225352112676056,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,235,33,64,27,1,1,33.082709341795365,-116.99513841518677,0.037037037037037035,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,235,33,64,27,1,1,33.082709341795365,-116.99513841518677,0.037037037037037035,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,241,42,76,22,0,0,32.88634531749301,-117.0564648801472,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,242,189,447,127,6,1,32.91947899976272,-117.1426172010863,0.047244094488188976,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,243,91,204,80,3,1,32.870391979565866,-117.15308981578755,0.0375,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2025,243,91,204,80,3,1,32.870391979565866,-117.15308981578755,0.0375,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
 2025,245,3,7,5,0,0,32.93204297477473,-117.00772967955226,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,246,25,57,25,3,1,32.93141133761594,-117.08976111807016,0.12,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,311,75,167,45,0,0,32.792844777392105,-117.13085133944696,0.0,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
-2025,312,36,83,30,0,0,32.83444136883477,-117.08256786059422,0.0,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very low
+2025,312,36,83,30,0,0,32.83444136883477,-117.08256786059422,0.0,True,Police-beat representative point; not exact collision location,Frequency: Low,Severity: Very low
 2025,313,239,514,159,8,1,32.83054722226561,-117.14278671565819,0.050314465408805034,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,314,36,81,16,1,1,33.18737517952651,-117.23066947053908,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,314,36,81,16,1,1,33.18737517952651,-117.23066947053908,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,315,165,352,92,9,2,32.773422052363586,-117.14213316310999,0.09782608695652174,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2025,316,1,2,0,0,0,32.78292199901396,-117.11924623673008,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2025,321,89,193,58,1,0,32.7956980896065,-117.09979247672425,0.017241379310344827,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2025,322,35,78,23,0,0,32.79664845581645,-117.07993976055249,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,323,17,37,10,0,0,32.78719487543675,-117.06457435877357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,321,89,193,58,1,0,32.7956980896065,-117.09979247672425,0.017241379310344827,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
+2025,322,35,78,23,0,0,32.79664845581645,-117.07993976055249,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,323,17,37,10,0,0,32.78719487543675,-117.06457435877357,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,324,40,84,31,3,1,32.818671851023076,-117.03047373719554,0.0967741935483871,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
-2025,325,16,32,12,1,1,32.8031127689942,-117.0507809366459,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,326,50,105,32,4,0,33.21520407905139,-117.158853043931,0.125,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2025,325,16,32,12,1,1,32.8031127689942,-117.0507809366459,0.08333333333333333,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2025,326,50,105,32,4,0,33.21520407905139,-117.158853043931,0.125,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very high
 2025,327,46,109,39,2,0,32.77187444242221,-117.0584304876291,0.05128205128205128,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
 2025,418,1,1,0,0,0,33.02556941409287,-117.1433616868907,,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,431,26,54,12,2,0,33.068726208608545,-116.84503457088576,0.16666666666666666,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,432,54,144,44,3,0,33.07521573004986,-116.7893009897486,0.06818181818181818,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
-2025,433,50,120,37,3,1,33.01885171507661,-116.97490241410009,0.08108108108108109,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
-2025,434,29,68,16,1,0,33.02079779583591,-116.93927795692584,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,432,54,144,44,3,0,33.07521573004986,-116.7893009897486,0.06818181818181818,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: High
+2025,433,50,120,37,3,1,33.01885171507661,-116.97490241410009,0.08108108108108109,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: High
+2025,434,29,68,16,1,0,33.02079779583591,-116.93927795692584,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,435,4,6,1,0,0,33.0244194806951,-116.88034977660124,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,436,38,78,30,0,0,33.03875431313823,-116.83634997698923,0.0,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very low
 2025,437,74,192,57,2,0,33.034426253998184,-116.76383218676057,0.03508771929824561,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2025,438,37,89,22,1,0,32.964962072509046,-116.93198165582515,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,438,37,89,22,1,0,32.964962072509046,-116.93198165582515,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,439,4,9,2,0,0,32.97521387218142,-116.90067834867656,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2025,441,88,205,54,4,0,32.69889849972856,-117.10769763142628,0.07407407407407407,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2025,442,33,71,16,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,443,20,50,14,0,0,32.96526740900654,-116.7621984178671,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,444,50,128,33,2,1,33.12355440646557,-116.85268610311729,0.06060606060606061,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2025,441,88,205,54,4,0,32.69889849972856,-117.10769763142628,0.07407407407407407,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2025,442,33,71,16,0,0,32.989441787119915,-116.75926712183384,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,443,20,50,14,0,0,32.96526740900654,-116.7621984178671,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2025,444,50,128,33,2,1,33.12355440646557,-116.85268610311729,0.06060606060606061,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
 2025,445,28,65,23,2,0,33.08358611664043,-116.77307253626101,0.08695652173913043,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,446,77,186,58,4,0,32.69913772804682,-117.08992016000654,0.06896551724137931,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
 2025,447,45,99,35,0,0,32.727380344558014,-117.09407870897448,0.0,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very low
 2025,451,74,178,56,1,0,32.73177907125266,-117.07498111047565,0.017857142857142856,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
-2025,452,16,39,12,0,0,32.70231816405372,-117.0621023335037,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,511,80,187,59,2,0,32.6923534985372,-117.13284733903458,0.03389830508474576,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2025,452,16,39,12,0,0,32.70231816405372,-117.0621023335037,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2025,511,80,187,59,2,0,32.6923534985372,-117.13284733903458,0.03389830508474576,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
 2025,512,101,259,66,3,0,32.699800986596294,-117.13052814317592,0.045454545454545456,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,514,34,78,23,1,0,32.842704320208426,-116.97648996726558,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,514,34,78,23,1,0,32.842704320208426,-116.97648996726558,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,515,23,51,12,0,0,32.845674806706285,-116.96352948421804,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,516,37,92,24,3,1,32.82696488216109,-117.01406118593331,0.125,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,517,48,113,26,2,0,32.71632203758088,-117.13433778552573,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2025,516,37,92,24,3,1,32.82696488216109,-117.01406118593331,0.125,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,517,48,113,26,2,0,32.71632203758088,-117.13433778552573,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,518,12,28,8,0,0,32.83248265911578,-116.99224126939387,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,521,189,429,112,2,1,32.90328552933019,-116.95068831877407,0.017857142857142856,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2025,522,33,75,17,1,0,32.92186076942686,-116.89993698061527,0.058823529411764705,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,523,54,119,23,0,0,32.95617399388699,-116.8361320030119,0.0,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2025,524,163,348,87,2,0,32.89382936706996,-116.85701579124563,0.022988505747126436,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2025,522,33,75,17,1,0,32.92186076942686,-116.89993698061527,0.058823529411764705,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,523,54,119,23,0,0,32.95617399388699,-116.8361320030119,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,524,163,348,87,2,0,32.89382936706996,-116.85701579124563,0.022988505747126436,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2025,525,13,29,6,0,0,32.879951936980746,-116.93973829827166,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,526,43,94,32,0,0,32.72152809229162,-117.15666960759938,0.0,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Very low
-2025,527,19,40,13,1,0,32.86352947495234,-116.93136247772748,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,527,19,40,13,1,0,32.86352947495234,-116.93136247772748,0.07692307692307693,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,528,40,88,17,0,0,32.86415703284928,-116.91022290750075,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,529,77,188,61,5,1,32.84017041201663,-116.93920835327967,0.08196721311475409,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2025,529,77,188,61,5,1,32.84017041201663,-116.93920835327967,0.08196721311475409,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
 2025,531,65,143,42,3,1,32.84321580839031,-116.90016213002147,0.07142857142857142,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
 2025,541,12,33,10,0,0,32.9291747187676,-116.77443218034055,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,611,225,502,163,19,2,32.74087129851641,-117.20029111792292,0.1165644171779141,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
 2025,612,42,106,36,2,0,32.772107860227166,-116.96843105192859,0.05555555555555555,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
-2025,613,78,175,49,3,1,32.77374071883966,-116.94185098320088,0.061224489795918366,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
-2025,614,166,405,89,2,1,32.74620175051584,-117.2480835727332,0.02247191011235955,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
+2025,613,78,175,49,3,1,32.77374071883966,-116.94185098320088,0.061224489795918366,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
+2025,614,166,405,89,2,1,32.74620175051584,-117.2480835727332,0.02247191011235955,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
 2025,615,42,90,29,2,0,32.75527723592303,-116.97723684721086,0.06896551724137931,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,616,5,12,4,1,0,32.752628141220626,-116.94692878514448,0.25,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,617,13,27,7,1,0,32.75249442181715,-116.91730098864045,0.14285714285714285,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,618,10,19,5,1,0,32.76328831123388,-116.86528797307204,0.2,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,621,105,235,69,3,0,32.78474350011991,-117.17350386676355,0.043478260869565216,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,622,47,109,28,2,1,32.77053271608819,-117.1930381983357,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2025,623,55,95,28,2,0,32.764147409640195,-117.17795146796615,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2025,622,47,109,28,2,1,32.77053271608819,-117.1930381983357,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,623,55,95,28,2,0,32.764147409640195,-117.17795146796615,0.07142857142857142,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,624,99,228,65,2,0,32.72581659624629,-116.95774643171607,0.03076923076923077,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2025,625,33,66,16,1,0,32.71166795495702,-116.92295457345952,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,626,33,63,17,2,1,32.719860513153876,-116.86898081471712,0.11764705882352941,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,625,33,66,16,1,0,32.71166795495702,-116.92295457345952,0.0625,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,626,33,63,17,2,1,32.719860513153876,-116.86898081471712,0.11764705882352941,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,627,196,431,99,1,0,32.7006865484599,-116.81568469167085,0.010101010101010102,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2025,628,36,81,21,1,1,32.72528832037109,-117.00586281519546,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,628,36,81,21,1,1,32.72528832037109,-117.00586281519546,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,702,1,2,1,0,0,32.58640729053293,-117.11183119021804,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,711,5,8,4,0,0,32.54811512377198,-117.08682754599928,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2025,712,92,203,53,4,2,32.555674316681994,-117.04801204711242,0.07547169811320754,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: High
+2025,712,92,203,53,4,2,32.555674316681994,-117.04801204711242,0.07547169811320754,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
 2025,713,64,131,36,4,0,32.564553838907365,-116.98788827590417,0.1111111111111111,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
 2025,714,8,17,1,0,0,32.54451595061849,-117.03039487125258,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2025,721,81,195,64,1,0,32.58281392644402,-117.09825832771111,0.015625,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2025,721,81,195,64,1,0,32.58281392644402,-117.09825832771111,0.015625,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2025,722,65,152,44,2,0,32.66711452591835,-117.00913888789105,0.045454545454545456,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
 2025,723,100,233,75,1,1,32.57840310808878,-117.05675680465119,0.013333333333333334,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2025,724,35,83,21,1,0,32.658852893134195,-116.91503007193131,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,725,47,110,30,2,0,32.579466998319205,-117.01896798018487,0.06666666666666667,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: High
+2025,724,35,83,21,1,0,32.658852893134195,-116.91503007193131,0.047619047619047616,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,725,47,110,30,2,0,32.579466998319205,-117.01896798018487,0.06666666666666667,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: High
 2025,811,40,95,26,0,0,33.28874302390258,-116.89331559684965,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,812,3,7,1,0,0,33.21204047910238,-117.05224848023076,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,813,194,422,99,2,0,33.256640818090105,-117.00146499740242,0.020202020202020204,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
-2025,814,16,39,5,0,0,33.26344978308218,-116.94514831328809,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,821,79,177,49,2,1,33.26397631835824,-116.82746789804872,0.04081632653061224,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,822,81,182,49,5,1,33.31983921529675,-116.64556173889338,0.10204081632653061,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very high
-2025,823,29,69,13,0,0,33.28929194546852,-116.54504232398082,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
-2025,824,85,198,60,3,0,33.19173535658806,-116.84455296904608,0.05,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Medium
-2025,825,60,132,40,1,1,33.084010908673356,-116.75174244288297,0.025,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
-2025,826,75,165,41,1,1,33.191680768548515,-116.75401223889719,0.024390243902439025,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2025,814,16,39,5,0,0,33.26344978308218,-116.94514831328809,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2025,821,79,177,49,2,1,33.26397631835824,-116.82746789804872,0.04081632653061224,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Low
+2025,822,81,182,49,5,1,33.31983921529675,-116.64556173889338,0.10204081632653061,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very high
+2025,823,29,69,13,0,0,33.28929194546852,-116.54504232398082,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,824,85,198,60,3,0,33.19173535658806,-116.84455296904608,0.05,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
+2025,825,60,132,40,1,1,33.084010908673356,-116.75174244288297,0.025,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
+2025,826,75,165,41,1,1,33.191680768548515,-116.75401223889719,0.024390243902439025,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Very low
 2025,827,27,64,12,0,0,33.16683113642124,-116.71801267107438,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,828,18,45,6,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
+2025,828,18,45,6,0,0,33.161666874567715,-116.56655399259245,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,831,57,131,27,1,0,33.09266461258565,-116.70240144470779,0.037037037037037035,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2025,832,56,144,38,2,1,33.07539925544093,-116.6052377489849,0.05263157894736842,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
-2025,833,49,113,23,1,0,32.92600127248982,-116.74717314242025,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
-2025,834,51,124,28,1,0,32.968833167875026,-116.57150084330075,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2025,832,56,144,38,2,1,33.07539925544093,-116.6052377489849,0.05263157894736842,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
+2025,833,49,113,23,1,0,32.92600127248982,-116.74717314242025,0.043478260869565216,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,834,51,124,28,1,0,32.968833167875026,-116.57150084330075,0.03571428571428571,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,835,24,61,20,1,0,32.97695935736729,-116.54247377392124,0.05,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,836,25,72,19,1,1,32.973992625535146,-116.51467538268406,0.05263157894736842,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,837,20,49,20,0,0,32.724376080510794,-117.1086256590632,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,838,46,113,20,3,1,32.75206244852271,-117.11659179402932,0.15,False,Police-beat representative point; not exact collision location,Frequency: High,Not eligible
+2025,837,20,49,20,0,0,32.724376080510794,-117.1086256590632,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
+2025,838,46,113,20,3,1,32.75206244852271,-117.11659179402932,0.15,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
 2025,839,23,53,5,0,0,32.743506326674634,-117.11462286707754,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,841,14,30,8,0,0,33.2656976505115,-116.17118308305773,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,931,63,138,61,3,0,32.89512014912518,-117.19382843269258,0.04918032786885246,True,Police-beat representative point; not exact collision location,Frequency: High,Severity: Medium
 2025,932,7,20,6,0,0,32.920274611200256,-117.24808516611526,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
 2025,933,28,70,22,1,0,32.955217133425855,-117.25020174535538,0.045454545454545456,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
-2025,934,113,223,78,2,1,32.937283051376355,-117.20530507023517,0.02564102564102564,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Low
-2025,935,33,67,27,0,0,32.97265838878731,-117.21436342450443,0.0,False,Police-beat representative point; not exact collision location,Frequency: Medium,Not eligible
+2025,934,113,223,78,2,1,32.937283051376355,-117.20530507023517,0.02564102564102564,True,Police-beat representative point; not exact collision location,Frequency: Very high,Severity: Very low
+2025,935,33,67,27,0,0,32.97265838878731,-117.21436342450443,0.0,False,Police-beat representative point; not exact collision location,Frequency: Low,Not eligible
 2025,936,8,15,5,0,0,32.963308316764014,-117.15873147780599,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
-2025,937,31,73,36,2,0,32.999781625715784,-117.14550256158267,0.05555555555555555,True,Police-beat representative point; not exact collision location,Frequency: Medium,Severity: Medium
+2025,937,31,73,36,2,0,32.999781625715784,-117.14550256158267,0.05555555555555555,True,Police-beat representative point; not exact collision location,Frequency: Low,Severity: Medium
 2025,999,2,6,1,0,0,,,0.0,False,Police-beat representative point; not exact collision location,Frequency: Very low,Not eligible
