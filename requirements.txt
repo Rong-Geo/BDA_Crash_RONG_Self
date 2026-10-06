@@ -1,0 +1,9 @@
+# install by this command: pip install -r requirements.txt
+pandas
+geopandas
+matplotlib
+seaborn
+shapely
+pyogrio
+jupyter
+ipykernel

@@ -1,0 +1,82 @@
+[
+  {
+    "year": 2018,
+    "unique_collisions": 9890,
+    "participant_records": 15522,
+    "known_injury_records": 4526,
+    "serious_fatal_records": 256,
+    "fatal_records": 46,
+    "serious_fatal_rate": 0.0565620857269111,
+    "fatal_rate": 0.010163499779054353
+  },
+  {
+    "year": 2019,
+    "unique_collisions": 10174,
+    "participant_records": 18179,
+    "known_injury_records": 5238,
+    "serious_fatal_records": 258,
+    "fatal_records": 49,
+    "serious_fatal_rate": 0.0492554410080183,
+    "fatal_rate": 0.009354715540282551
+  },
+  {
+    "year": 2020,
+    "unique_collisions": 8076,
+    "participant_records": 17039,
+    "known_injury_records": 4073,
+    "serious_fatal_records": 235,
+    "fatal_records": 55,
+    "serious_fatal_rate": 0.0576970292167935,
+    "fatal_rate": 0.013503560029462312
+  },
+  {
+    "year": 2021,
+    "unique_collisions": 9070,
+    "participant_records": 19617,
+    "known_injury_records": 4951,
+    "serious_fatal_records": 272,
+    "fatal_records": 63,
+    "serious_fatal_rate": 0.054938396283579,
+    "fatal_rate": 0.0127247020803878
+  },
+  {
+    "year": 2022,
+    "unique_collisions": 7757,
+    "participant_records": 17117,
+    "known_injury_records": 4776,
+    "serious_fatal_records": 270,
+    "fatal_records": 59,
+    "serious_fatal_rate": 0.0565326633165829,
+    "fatal_rate": 0.012353433835845896
+  },
+  {
+    "year": 2023,
+    "unique_collisions": 7884,
+    "participant_records": 17622,
+    "known_injury_records": 5048,
+    "serious_fatal_records": 261,
+    "fatal_records": 60,
+    "serious_fatal_rate": 0.0517036450079239,
+    "fatal_rate": 0.011885895404120444
+  },
+  {
+    "year": 2024,
+    "unique_collisions": 7543,
+    "participant_records": 16981,
+    "known_injury_records": 4755,
+    "serious_fatal_records": 239,
+    "fatal_records": 45,
+    "serious_fatal_rate": 0.0502628811777076,
+    "fatal_rate": 0.00946372239747634
+  },
+  {
+    "year": 2025,
+    "unique_collisions": 7576,
+    "participant_records": 17115,
+    "known_injury_records": 4894,
+    "serious_fatal_records": 245,
+    "fatal_records": 50,
+    "serious_fatal_rate": 0.0500612995504699,
+    "fatal_rate": 0.01021659174499387
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "title": "City-wide trend, 2018-2025",
+      "bullets": [
+        "Collision frequency peaks at 10,174 reports in 2019, then generally declines to 7,543 in 2024 and 7,576 in 2025, a 25.5% decrease from the peak.",
+        "Severity does not follow that decline: serious/fatal records fall only 5.0% from 2019 to 2025 (peaking at 272 in 2021; fatal records peak at 63 in 2021), and the serious/fatal rate stays between 4.93% and 5.77% in 2018-2025."
+      ]
+    },
+    {
+      "title": "Police-beat patterns over space and time",
+      "bullets": [
+        "Police beat 122 has the highest collision frequency in 8 of 8 years. Its 3,409 reports over 2018-2025 are 1.7 times those of the next beat (242).",
+        "21 beats are in the Very high frequency class in at least 6 of 8 years (111, 115, 122, 123, 124, 234, 242, 313, 315, 441, 511, 512, 521, 524, 611, 614, 621, 627, 712, 813, 934): collision hotspots are spatially persistent.",
+        "High frequency does not mean high severity: across 463 eligible beat-years the rank correlation between frequency and serious/fatal rate is -0.01, and only 9 beats reach Very high severity in three or more years."
+      ]
+    }
+  ]
+}
